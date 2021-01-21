@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>850</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>500</width>
+    <height>850</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>문신닙독</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(129, 88, 84);</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>30</y>
+     <width>418</width>
+     <height>780</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_5">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QPushButton" name="keyword_path_btn">
+          <property name="minimumSize">
+           <size>
+            <width>405</width>
+            <height>81</height>
+           </size>
+          </property>
+          <property name="cursor">
+           <cursorShape>OpenHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 25 24pt &quot;Malgun Gothic&quot;;
+background-color: rgb(249, 235, 222);</string>
+          </property>
+          <property name="text">
+           <string>검색어 엑셀파일 열기</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="folder_path_btn_2">
+          <property name="minimumSize">
+           <size>
+            <width>405</width>
+            <height>81</height>
+           </size>
+          </property>
+          <property name="cursor">
+           <cursorShape>OpenHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 25 24pt &quot;Malgun Gothic&quot;;
+background-color: rgb(249, 235, 222);</string>
+          </property>
+          <property name="text">
+           <string>저장할 위치 선택하기</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="styleSheet">
+           <string notr="true">font: 25 22pt &quot;Malgun Gothic&quot;;
+background-color: rgb(249, 235, 222);</string>
+          </property>
+          <property name="text">
+           <string>ID</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_id">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>61</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>300</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(0, 0, 0);
+font: 25 24pt &quot;Malgun Gothic&quot;;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="styleSheet">
+           <string notr="true">font: 25 22pt &quot;Malgun Gothic&quot;;
+background-color: rgb(249, 235, 222);</string>
+          </property>
+          <property name="text">
+           <string>Secret</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_secret">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>61</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>300</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(0, 0, 0);
+font: 25 24pt &quot;Malgun Gothic&quot;;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="Line" name="line_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QLabel" name="label_save">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>41</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 25 18pt &quot;Malgun Gothic&quot;;
+background-color: rgb(249, 235, 222);</string>
+          </property>
+          <property name="text">
+           <string>저장할 파일명 입력하기</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_save">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>41</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 16pt &quot;휴먼둥근헤드라인&quot;;
+background-color: rgb(249, 235, 222);</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="Line" name="line_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="label_max">
+          <property name="minimumSize">
+           <size>
+            <width>240</width>
+            <height>81</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 25 20pt &quot;Malgun Gothic&quot;;
+background-color: rgb(249, 235, 222);</string>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;최대 검색 개수&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;(10단위, 최대1000)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit1_1">
+          <property name="minimumSize">
+           <size>
+            <width>162</width>
+            <height>81</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>162</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 16pt &quot;휴먼둥근헤드라인&quot;;
+background-color: rgb(249, 235, 222);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLabel" name="label_4">
+          <property name="minimumSize">
+           <size>
+            <width>243</width>
+            <height>81</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 25 20pt &quot;Malgun Gothic&quot;;
+background-color: rgb(249, 235, 222);</string>
+          </property>
+          <property name="text">
+           <string>검색어 범위</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit1_2">
+          <property name="minimumSize">
+           <size>
+            <width>162</width>
+            <height>81</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>162</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 16pt &quot;휴먼둥근헤드라인&quot;;
+background-color: rgb(249, 235, 222);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <item>
+       <widget class="Line" name="line">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="run_btn">
+        <property name="minimumSize">
+         <size>
+          <width>405</width>
+          <height>131</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>OpenHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 25 24pt &quot;Malgun Gothic&quot;;
+background-color: rgb(249, 235, 222);</string>
+        </property>
+        <property name="text">
+         <string>실행</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>keyword_path_btn</tabstop>
+  <tabstop>lineEdit_save</tabstop>
+  <tabstop>lineEdit1_1</tabstop>
+  <tabstop>lineEdit1_2</tabstop>
+  <tabstop>run_btn</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>keyword_path_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>keywords_open()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>442</x>
+     <y>79</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>499</x>
+     <y>80</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>run_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>run_news()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>411</x>
+     <y>687</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>499</x>
+     <y>688</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>folder_path_btn_2</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>openFolder()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>400</x>
+     <y>222</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>509</x>
+     <y>226</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>keywords_open()</slot>
+  <slot>save_path()</slot>
+  <slot>run_news()</slot>
+  <slot>num_change()</slot>
+  <slot>openFolder()</slot>
+ </slots>
+</ui>

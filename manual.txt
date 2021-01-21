@@ -1,0 +1,7 @@
+search_list.xlsx : 검색어가 담겨있는 파일. 프로그램을 구동할 때 예시 파일.
+newGUI.ui 파일 :  GUI파일. 해당 파일이 있는 경로가 코드를 실행할 때 필요.
+NewsCrawling_v2.1.py 파일 : 코드
+NewsCrawling_v2.1(withCONSOLE).exe : 백그라운드에 콘솔창이 함께 뜨는 실행파일
+NewsCrawling_v2.1(withoutCONSOLE).exe: 콘솔이 안 뜨는 실행파일
+
+
